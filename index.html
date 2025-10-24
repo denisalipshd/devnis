@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Devnis — Jasa Pembuatan Website</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container nav">
+      <div class="brand">
+        <div class="logo">D</div>
+        <div>
+          <h1>Devnis</h1>
+          <div class="small muted">Jasa Pembuatan Website</div>
+        </div>
+      </div>
+
+      <nav>
+        <button class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#services">Layanan</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">Tentang</a>
+          <a href="#contact" class="cta">Konsultasi Gratis</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div>
+          <h2>
+            Bangun Website Profesional untuk Bisnis Anda bersama
+            <span style="color: var(--blue)">Devnis</span>
+          </h2>
+          <p class="muted">
+            Kami membantu UMKM, startup, dan profesional tampil di internet
+            dengan website cepat, responsif, dan siap jualan.
+          </p>
+          <div class="buttons">
+            <a href="#contact" class="cta">Buat Sekarang</a>
+            <a
+              href="#portfolio"
+              class="small"
+              style="
+                align-self: center;
+                color: var(--muted);
+                text-decoration: underline;
+              "
+              >Lihat Portofolio</a
+            >
+          </div>
+
+          <div class="features" style="margin-top: 24px">
+            <div class="feature">
+              <i class="fa-solid fa-rocket"></i>
+              <div>
+                <div style="font-weight: 600">Cepat & Ringan</div>
+                <div class="muted small">
+                  Waktu loading optimal untuk pengalaman pengguna lebih baik.
+                </div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <i class="fa-solid fa-lock"></i>
+              <div>
+                <div style="font-weight: 600">Aman & Terpercaya</div>
+                <div class="muted small">
+                  Implementasi best practice keamanan & backup.
+                </div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <div>
+                <div style="font-weight: 600">Responsif</div>
+                <div class="muted small">
+                  Tampil rapi di desktop, tablet, dan ponsel.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="mock">
+            <img src="./images/hero-demo.png" alt="hero-demo" />
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-top: 12px;
+              align-items: center;
+            "
+          >
+            <div class="small muted">Contoh: Company Profile</div>
+            <div style="display: flex; gap: 8px">
+              <button class="small" style="border: 0; background: transparent">
+                Demo</button
+              ><button
+                class="small"
+                style="
+                  border: 0;
+                  background: var(--blue);
+                  color: white;
+                  padding: 8px 10px;
+                  border-radius: 8px;
+                "
+              >
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services">
+        <h3 style="margin-bottom: 8px">Layanan Kami</h3>
+        <p class="muted small">
+          Pilih paket yang sesuai kebutuhanmu — kami bantu dari desain sampai
+          live.
+        </p>
+
+        <div class="services">
+          <div class="service card">
+            <i class="fa-solid fa-globe"></i>
+            <h4>Website Company Profile</h4>
+            <p>
+              Website sederhana untuk menampilkan profil perusahaan, layanan,
+              dan kontak.
+            </p>
+            <div class="muted small" style="margin-top: 8px">
+              Mulai dari Rp 1.250.000
+            </div>
+          </div>
+
+          <div class="service card">
+            <i class="fa-solid fa-store"></i>
+            <h4>E-commerce / Toko Online</h4>
+            <p>
+              Sistem katalog produk, keranjang, checkout, dan integrasi
+              pembayaran.
+            </p>
+            <div class="muted small" style="margin-top: 8px">
+              Mulai dari Rp 2.500.000
+            </div>
+          </div>
+
+          <div class="service card">
+            <i class="fa-solid fa-bolt"></i>
+            <h4>Landing Page & Promo</h4>
+            <p>
+              Landing page cepat konversi untuk kampanye atau peluncuran produk.
+            </p>
+            <div class="muted small" style="margin-top: 8px">
+              Mulai dari Rp 700.000
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="portfolio">
+        <h3 style="margin-bottom: 8px">Portfolio</h3>
+        <p class="muted small">
+          Beberapa hasil kerja kami — klik untuk melihat detail.
+        </p>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="./images/hero-demo.png" alt="Project 1" />
+            <div class="portfolio-overlay">WOC Course — Company Profile</div>
+          </div>
+          <div class="portfolio-item">
+            <img src="./images/website-coffe.png" alt="Project 2" />
+            <div class="portfolio-overlay">Website Coffee — Landing Page</div>
+          </div>
+          <div class="portfolio-item">
+            <img src="./images/website-sekolah.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              Website Sekolah — Company Profile
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT & TESTIMONIALS -->
+      <section id="about" class="split">
+        <div>
+          <h3>Tentang Devnis</h3>
+          <p class="muted">
+            Devnis adalah tim kecil yang berfokus membantu bisnis lokal dan
+            profesional mendapat website yang bersih, cepat, dan mudah dikelola.
+            Kami mengutamakan komunikasi selama pengembangan agar hasil sesuai
+            kebutuhan.
+          </p>
+          <ul class="muted small" style="margin-top: 12px">
+            <li>Desain custom & responsive</li>
+            <li>Migrasi & maintenance</li>
+            <li>Integrasi pembayaran & SEO dasar</li>
+          </ul>
+          <div style="margin-top: 22px">
+            <a href="#contact" class="cta">Mulai Konsultasi</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Testimoni</h4>
+          <div class="testimonials" style="margin-top: 12px">
+            <div class="testimonial">
+              <div style="font-weight: 600">Ani - Pemilik Toko</div>
+              <div class="muted small" style="margin-top: 6px">
+                "Website baru kami cepat dan banyak yang pesan setelahnya.
+                Proses clear dan cepet!"
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div style="font-weight: 600">Budi - Freelancer</div>
+              <div class="muted small" style="margin-top: 6px">
+                "Harga terjangkau, hasil rapi. Sangat direkomendasikan untuk
+                UMKM."
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="container" style="padding: 0">
+          <h3 style="margin-top: 0; color: white">Kontak Kami</h3>
+          <p class="small" style="color: rgba(255, 255, 255, 0.9)">
+            Isi form ini dan kami akan menghubungi dalam 1x24 jam kerja.
+          </p>
+
+          <form id="contactForm" style="margin-top: 12px">
+            <input type="text" name="name" placeholder="Nama" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Pesan" required></textarea>
+            <button
+              type="submit"
+              style="
+                grid-column: 1/3;
+                padding: 12px;
+                border-radius: 10px;
+                border: 0;
+                background: white;
+                color: var(--blue);
+                font-weight: 700;
+              "
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="container" style="padding: 15px 0">
+        <div class="footer-wrap">
+          <div>
+            <div
+              class="logo"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  var(--blue),
+                  var(--blue-dark)
+                );
+                width: 44px;
+                height: 44px;
+                border-radius: 8px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+              "
+            >
+              D
+            </div>
+            <div style="margin-top: 8px">Devnis — Jasa Pembuatan Website</div>
+          </div>
+
+          <div class="muted small">
+            <span>Menu :</span>
+            <div>
+              <a href="#services" style="text-decoration: none">Layanan</a> •
+              <a href="#portfolio" style="text-decoration: none">Portfolio</a> •
+              <a href="#contact" style="text-decoration: none">Kontak</a>
+            </div>
+          </div>
+
+          <div class="muted small">
+            <span>Follow :</span>
+            <div>
+              <a href="#" style="text-decoration: none">Instagram</a> •
+              <a href="#" style="text-decoration: none">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            text-align: center;
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px;
+          "
+        >
+          © 2025 Devnis. All rights reserved.
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
