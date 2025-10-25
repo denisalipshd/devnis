@@ -132,21 +132,31 @@ h3 {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 460px;
+  grid-template-columns: 1fr;
   gap: 50px;
   align-items: center;
   padding: 50px 0;
 }
 .hero h2 {
-  font-size: 38px;
+  font-size: 48px;
+  text-align: center;
   line-height: 1.2;
   margin: 0 0 18px;
 }
+.hero .desc {
+  max-width: 600px;
+  
+  margin: auto;
+}
 .hero p {
+  text-align: center;
   margin: 0 0 25px;
 }
 .hero .buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 40px;
   gap: 15px;
 }
 .mock {
@@ -205,13 +215,21 @@ h3 {
 }
 .portfolio-item {
   position: relative;
+  width: 100%;
+  height: 400px;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(20, 20, 50, 0.08);
+  padding: 8px;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  border: 1px solid transparent;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
 }
 .portfolio-item img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
   display: block;
   transition: transform 0.35s;
@@ -323,13 +341,6 @@ footer {
   color: var(--blue);
 }
 
-@media (max-width: 1150px) {
-  .hero {
-    grid-template-columns: 1fr 320px;
-    gap: 30px;
-  }
-}
-
 @media (max-width: 900px) {
   .hamburger {
     display: inline-flex;
@@ -355,13 +366,8 @@ footer {
   .nav-links.show-menu a.cta {
     margin-top: 5px;
   }
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding-top: 20px;
-  }
   .hero h2 {
-    font-size: 30px;
+    font-size: 38px;
   }
   .hero .buttons {
     justify-content: center;
@@ -410,5 +416,11 @@ footer {
   }
   .footer-wrap > div > div {
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 512px) {
+  .hero h2 {
+    font-size: 30px;
   }
 }
