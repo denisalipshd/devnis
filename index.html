@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Devnis — Jasa Pembuatan Website</title>
 
+    <meta property="og:title" content="Devnis — Jasa Pembuatan Website Profesional" />
+    <meta property="og:description" content="Devnis menyediakan jasa pembuatan website cepat, murah dan responsive." />
+    <meta property="og:url" content="https://www.devnisweb.com/" />
+    <meta property="og:type" content="website" />
+
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
@@ -27,7 +32,7 @@
       <div class="brand">
         <div class="logo">D</div>
         <div>
-          <h1>Devnis</h1>
+          <span class="h1">Devnis</span>
           <div class="small muted">Jasa Pembuatan Website</div>
         </div>
       </div>
@@ -50,10 +55,10 @@
       <!-- HERO -->
       <section id="home" class="hero">
         <div>
-          <h2>
+          <h1>
             Bangun Website Profesional untuk Bisnis Anda bersama
             <span style="color: var(--blue)">Devnis</span>
-          </h2>
+          </h1>
           <div class="desc">
             <p class="muted">
               Kami membantu UMKM, startup, dan profesional tampil di internet
@@ -106,38 +111,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="card">
-          <div class="mock">
-            <img src="./images/hero-demo.png" alt="hero-demo" />
-          </div>
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              margin-top: 12px;
-              align-items: center;
-            "
-          >
-            <div class="small muted">Contoh: Company Profile</div>
-            <div style="display: flex; gap: 8px">
-              <button class="small" style="border: 0; background: transparent">
-                Demo</button
-              ><button
-                class="small"
-                style="
-                  border: 0;
-                  background: var(--blue);
-                  color: white;
-                  padding: 8px 10px;
-                  border-radius: 8px;
-                "
-              >
-                Order
-              </button>
-            </div>
-          </div>
-        </div> -->
       </section>
 
       <!-- SERVICES -->
@@ -269,80 +242,39 @@
             <input type="text" name="name" placeholder="Nama" required />
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="message" placeholder="Pesan" required></textarea>
-            <button
-              type="submit"
-              style="
-                grid-column: 1/3;
-                padding: 12px;
-                border-radius: 10px;
-                border: 0;
-                background: white;
-                color: var(--blue);
-                font-weight: 700;
-              "
-            >
-              Kirim Pesan
-            </button>
+            <button type="submit">Kirim Pesan</button>
           </form>
         </div>
       </section>
-
-      <footer class="container" style="padding: 15px 0">
-        <div class="footer-wrap">
-          <div>
-            <div
-              class="logo"
-              style="
-                background: linear-gradient(
-                  135deg,
-                  var(--blue),
-                  var(--blue-dark)
-                );
-                width: 44px;
-                height: 44px;
-                border-radius: 8px;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: 700;
-              "
-            >
-              D
-            </div>
-            <div style="margin-top: 8px">Devnis — Jasa Pembuatan Website</div>
-          </div>
-
-          <div class="muted small">
-            <span>Menu :</span>
-            <div>
-              <a href="#services" style="text-decoration: none">Layanan</a> •
-              <a href="#portfolio" style="text-decoration: none">Portfolio</a> •
-              <a href="#contact" style="text-decoration: none">Kontak</a>
-            </div>
-          </div>
-
-          <div class="muted small">
-            <span>Follow :</span>
-            <div>
-              <a href="#" style="text-decoration: none">Instagram</a> •
-              <a href="#" style="text-decoration: none">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          style="
-            text-align: center;
-            margin-top: 18px;
-            color: var(--muted);
-            font-size: 13px;
-          "
-        >
-          © 2025 Devnis. All rights reserved.
-        </div>
-      </footer>
     </main>
+
+    <footer class="container" style="padding: 15px 0">
+      <div class="footer-wrap">
+        <div>
+          <div class="logo">D</div>
+          <div style="margin-top: 8px">Devnis — Jasa Pembuatan Website</div>
+        </div>
+
+        <div class="muted small">
+          <span>Menu :</span>
+          <div>
+            <a href="#services" style="text-decoration: none">Layanan</a> •
+            <a href="#portfolio" style="text-decoration: none">Portfolio</a> •
+            <a href="#contact" style="text-decoration: none">Kontak</a>
+          </div>
+        </div>
+
+        <div class="muted small">
+          <span>Follow :</span>
+          <div>
+            <a href="#" style="text-decoration: none">Instagram</a> •
+            <a href="#" style="text-decoration: none">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">© 2025 Devnis. All rights reserved.</div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
